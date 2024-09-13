@@ -564,12 +564,86 @@ font-size: 18px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
-/* .work-5
+.work-5
 {
     height: 311px;
     width: calc(16.67% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 0px;
+    top: 321px;
+}
+.work-6
+{
+    height: 311px;
+    width: calc(16.67% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 250px;
+    top: 321px;
+}
+.work-7
+{
+     width: calc(33.33% - 10px);
+    height: 311px;
     margin-bottom: 10px;
     margin-right: 10px;
-    float: left;
+    position: absolute;
+    left: 505px;
+    top: 321px;
+}
 
-} */
+
+
+@media (max-width:992px)
+{
+    .vg-container
+    {
+        flex-wrap:wrap ;
+    }
+    .vg-svc
+    {
+        width: 45%;
+        margin-right: 0;
+    }
+}
+@media(max-width:768px)
+{
+    .adjust
+    {
+        flex-direction: column;
+    }
+    .vg-svc, .vg-svc-list{
+        width: 100%;
+    }
+    .vg-svc:nth-of-type(.vg-svc:nth-of-type(odd){
+        padding: var(--gap1) 0 var(--gap1) 0 ;
+    }
+    .vg-svc
+    {
+        width: 65%;
+    }
+}
+@media(max-width : 576px)
+{
+    .vg-svc-list .vg-svc-desc
+    {
+        width: 100%;
+    }
+    .vg-svc-desc:nth-of-type(even)
+    {
+        padding: var(--gap1) 0 var(--gap1) 0;
+    }
+    .vg-blogarticles
+    {
+        padding: 0;
+    }
+    .vg-svc
+    {
+        width: 90%;
+        padding: 16px;
+    }
+}
+
